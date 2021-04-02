@@ -1,0 +1,106 @@
+theme: minimal-mistakes-jekyll
+
+# Site settings
+locale: en-GB
+title: Notes and thoughts of a Support & Infrastructure Engineer
+title_separator: "-"
+subtitle: Giving back and helping my memory at the same time
+name: &name Craig Osborn
+description: &description >-
+  Craig Osborn's blog on technology covering: PowerShell, operating system deployment, application packaging, Active Directory, Exchange, Intune and anything else.
+url: #"https://craigosborn.uk"
+baseurl: ""
+repository: caosborn/craigosborn.uk
+teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo: # "/assets/images/logo.svg"
+masthead_title: # overrides the website title displayed in the masthead, use " " for no title
+words_per_minute: 200
+search: true
+search_full_content: true
+search_provider: lunr
+
+# Site Author
+author:
+  name: Craig Osborn
+  avatar: # TODO:
+  bio: >-
+    Hey, thanks for stopping by!
+  location: United Kingdom
+  email: blog@craigosborn.uk
+  links:
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://www.linkedin.com/in/craigaosborn
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: https://github.com/caosborn/
+
+# Site Footer
+footer:
+  links:
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://www.linkedin.com/in/craigaosborn
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/caosborn/craigosborn.uk
+
+# Handling Reading
+include:
+  - _pages
+exclude:
+  - .vscode
+
+# Filtering Content
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-include-cache
+  - jekyll-minifier
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Conversion and Markdown Processing
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Outputting
+permalink: /:categories/:slug/
+paginate: 200
+timezone: Europe/London
+
+# Front Matter Defaults
+defaults:
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      classes: wide
+      author_profile: true
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      classes: wide
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: false
+      share: false
+      related: false
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
