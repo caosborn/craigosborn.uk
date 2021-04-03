@@ -25,5 +25,5 @@ Thanks again for visiting, I hope you find something here helpful!
 Take care and enjoy,<br/>
 Craig
 
-An of the views and opinions expressed in this blog are my own and do not necessarily reflect the official policy or position of my employer.
+Any of the views and opinions expressed in this blog are my own and do not necessarily reflect the official policy or position of my employer.
 {: .notice--info}
