@@ -1,6 +1,7 @@
 ---
 title: About Craig
 permalink: /about/
+author_profile: true
 ---
 
 Hi I'm Craig, thanks for stopping by and welcome to my little area of the internet.
